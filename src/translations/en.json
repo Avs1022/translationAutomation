@@ -1,0 +1,10 @@
+{
+    "cars":{
+        "black":"this is a black car",
+        "white":"this is a white car"
+    },
+    "time":{
+        "morning":"the time is 7 am",
+        "night":"this time is 7 pm"
+    }
+}
