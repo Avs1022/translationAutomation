@@ -1408,6 +1408,7 @@
     "appt_exist": "Randevu zaten var"
   },
   "calendar": {
+    "zeus": "tankın adı zeus",
     "overall_capacity_info": "Takvimin kapasitesini, günlük işleyebileceği onaylanmış randevu sayısına göre ayarlayabilirsiniz.",
     "overall_capacity_slot_info": "Takvimin kapasitesini, günlük işleyebileceği ayrılmış yuva sayısına göre ayarlayabilirsiniz.",
     "dyn_duration_desc_1": "Aynı takvim içerisinde Özel Alanlar , Sevkiyat & Randevu Tipleri , Palet Sayısı & Ağırlık bazında farklı randevu süreleri belirleyebilirsiniz.",

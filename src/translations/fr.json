@@ -1408,6 +1408,7 @@
     "appt_exist": "Le rendez-vous existe déjà"
   },
   "calendar": {
+    "zeus": "le nom du char est Zeus",
     "overall_capacity_info": "Vous pouvez définir la capacité du calendrier en fonction du nombre de rendez-vous confirmés qu'il peut gérer par jour",
     "overall_capacity_slot_info": "Vous pouvez définir la capacité du calendrier en fonction du nombre de créneaux réservés qu'il peut gérer par jour",
     "dyn_duration_desc_1": "Vous pouvez définir différentes durées de rendez-vous en fonction des champs personnalisés, des types d'expédition et de rendez-vous, du nombre de palettes et du poids dans le même calendrier.",

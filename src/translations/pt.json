@@ -1408,6 +1408,7 @@
     "appt_exist": "O agendamento já existe"
   },
   "calendar": {
+    "zeus": "o nome do tanque é Zeus",
     "overall_capacity_info": "Você pode definir a capacidade do calendário com base no número de compromissos confirmados que ele pode processar por dia",
     "overall_capacity_slot_info": "Você pode definir a capacidade do calendário com base no número de slots reservados que ele pode manipular por dia",
     "dyn_duration_desc_1": "Você pode definir diferentes durações de compromissos com base em campos personalizados, tipos de envio e agendamento, contagem de paletes e peso dentro do mesmo calendário.",

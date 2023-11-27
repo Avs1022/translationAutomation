@@ -1408,6 +1408,7 @@
     "appt_exist": "La cita ya existe"
   },
   "calendar": {
+    "zeus": "el nombre del tanque es zeus",
     "overall_capacity_info": "Puede configurar la capacidad del calendario según la cantidad de citas confirmadas que puede manejar por día",
     "overall_capacity_slot_info": "Puede configurar la capacidad del calendario en función de la cantidad de espacios reservados que puede manejar por día",
     "dyn_duration_desc_1": "Puede establecer diferentes duraciones de citas en función de los campos personalizados, los tipos de citas y envíos, el recuento y el peso de las paletas dentro del mismo calendario.",

@@ -30,6 +30,38 @@ async function download(translationsUrl, archive) {
     console.log(error)
   }
 }
+function restructureJsonInPlace(file1Name, file2Name, folderName) {
+  // Read the contents of the first JSON file
+  const jsonFile1 = path.join(folderName, file1Name);
+  const file1Contents = fs.readFileSync(jsonFile1, 'utf-8');
+  const json1 = JSON.parse(file1Contents);
+
+  // Read the contents of the second JSON file
+  const jsonFile2 = path.join(folderName, file2Name);
+  const file2Contents = fs.readFileSync(jsonFile2, 'utf-8');
+  let json2 = JSON.parse(file2Contents);
+
+  // Function to recursively restructure the JSON
+  function restructureJson(order, data) {
+      const result = {};
+
+      order.forEach(key => {
+          if (data.hasOwnProperty(key)) {
+              result[key] = (typeof data[key] === 'object') ? restructureJson(Object.keys(data[key]), data[key]) : data[key];
+          }
+      });
+
+      return result;
+  }
+
+  // Restructure the second JSON file in place
+  json2 = restructureJson(Object.keys(json1), json2);
+
+  // Write the modified JSON back to the second file
+  fs.writeFileSync(jsonFile2, JSON.stringify(json2, null, 2), 'utf-8');
+
+  console.log('JSON restructuring in place complete.');
+}
 
 
 async function main() {
@@ -104,6 +136,10 @@ async function main() {
   fs.unlink(archive, (err) => {
     if (err) throw err
   })
+ restructureJsonInPlace('en.json','fr.json',translationFolder);
+ restructureJsonInPlace('en.json','tr.json',translationFolder);
+ restructureJsonInPlace('en.json','es.json',translationFolder);
+ restructureJsonInPlace('en.json','pt.json',translationFolder);
 }
 
 

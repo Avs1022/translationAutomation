@@ -1408,6 +1408,7 @@
     "reason_header_appt": "Reason for scheduling outside the planned/wanted date"
   },
   "calendar": {
+    "zeus":"the tank name is zeus",
     "appt_type_desc_book": "Select the type of loads that you would like to book in this calendar.",
     "appt_booking_restriction": "Restrictions On Slot Booking For Carriers",
     "allow_booking_any_date": "Allow booking on any date.",
